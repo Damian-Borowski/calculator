@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
+    <script type="text/javascript" src="script/function.js"></script>
+    <title>Kalkulator</title>
+</head>
+<body>
+<main>
+    <section class="page">
+        <div class="calculator">
+            <form name="calc">
+                <input name="window" id="window" value="">
+            </form>
+            <table class="base">
+                <tr>
+                    <td><input class="click operator" type="button" value="%" id="calc-percent" onclick="GetValue(this.value)"></td>
+                    <td><input class="click operator" type="button" value="." id="calc-decimals" onclick="GetValue(this.value)"></td>
+                    <td><input class="click operator" type="button" value="/" id="calc-divide" onclick="GetValue(this.value)"></td>
+                    <td><input class="click operator" type="button" value="x" id="calc-multiply" onclick="multiplication()"></td>
+                </tr>
+                <tr>
+                    <td><input class="click" type="button" value="7" id="calc-seven" onclick="GetValue(this.value)"></td>
+                    <td><input class="click" type="button" value="8" id="calc-eight" onclick="GetValue(this.value)"></td>
+                    <td><input class="click" type="button" value="9" id="calc-nine" onclick="GetValue(this.value)"></td>
+                    <td><input class="click" type="button" value="-" id="calc-minus" onclick="GetValue(this.value)"></td>
+                </tr>
+                <tr>
+                    <td><input class="click" type="button" value="4" id="calc-four" onclick="GetValue(this.value)"></td>
+                    <td><input class="click" type="button" value="5" id="calc-five" onclick="GetValue(this.value)"></td>
+                    <td><input class="click" type="button" value="6" id="calc-six" onclick="GetValue(this.value)"></td>
+                    <td rowspan="2"><input class="click operator" type="button" value="+" id="calc-plus" onclick="GetValue(this.value)"></td>
+                </tr>
+                <tr>
+                    <td><input class="click" type="button" value="1" id="calc-one" onclick="GetValue(this.value)"></td>
+                    <td><input class="click" type="button" value="2" id="calc-two" onclick="GetValue(this.value)"></td>
+                    <td><input class="click" type="button" value="3" id="calc-three" onclick="GetValue(this.value)"></td>
+                </tr>
+                <tr>
+                    <td><input class="click operator" type="button" value="del" id="calc-clear" onclick="document.getElementById('window').value = ''"></td>
+                    <td><input class="click operator" type="button" value="0" id="calc-zero" onclick="GetValue(this.value)"></td>
+                    <td colspan="2"><input class="click operator" type="button" value="=" id="calc-equals" onclick="equal()"></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+<footer class="footer">
+    <p>Calculator by <a href="http://www.damianborowski.com">Damian Borowski &#174</a></p>
+</footer>
+</main>
+</body>
+</html>
